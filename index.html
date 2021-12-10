@@ -1,11 +1,28 @@
 <html>
 <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 <title> Hi This is maha the aws rock star, Let her enjoy </title>
 </head>
 <h1 class="about-section_header header--primary">
-            Everyday My Beautiful Thoughts
-            <br /><span class="about-section_leaves">&</span>
-            Strange Ideas.
+            My Beautiful Journey in my First company
+            <br />
 </h1>
 <body style="background-color:powderblue;">
         <div class="intro-body">
@@ -14,9 +31,10 @@
             <div class="name">Hi, I'm Mahalakshmi Purigalla</div>
             <div class="subtitle">Devops Engineer </div>
 	    </div>
-          <div class="profile-img">
-            <img src="images/aws-transparent.png" class="img-responsive" width="150px">
-          </div>
+		  <div class="row">
+          <div class="column">
+         <img src="images/aws-transparent.png" alt="Maha" style="width:100%">
+         </div>
         <div class="about-section_content">
             <p style="background-color:tomato;" class="about-section_text text--primary">
              <em>Warm Wishes</em>
