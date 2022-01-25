@@ -1,16 +1,12 @@
 version: 0.2
 
-phases:
+phases
   pre_build:
     commands:
-      - echo Logging in to docker hub...
-      - $(docker login --username pmahalakshmi --password-stdin Mahala9*)
+      - docker build -t helloworld .
   build:
     commands:
-      - echo Build started on `date`
-      - echo Building the Docker image...          
-      - docker build -t simpleapi:latest .
-      - docker tag simpleapi:latest pmahalakshmi/mylearning:v1  
+      - docker images
   post_build:
     commands:
       - echo Build completed on `date`
